@@ -1,10 +1,15 @@
 const form = document.querySelector("#searchForm");
-const res = document.querySelector("#rrr");
+const res = document.querySelector("#tableResult");
+var upd;
 
 console.log("ASDD");
 form.addEventListener('submit',(e)=>{
 
     e.preventDefault();
+
+    if(upd){
+        clearTimeout(upd);
+    }
     const ctype = form.elements.coinType.value;
     
     fetchPrice(ctype);
@@ -20,7 +25,31 @@ const fetchPrice= async(ctype) =>{
     const base  = r.data.coin.name;
     const target = 'USD';
 
-    rrr.innerHTML = `${price}`;
+    tableResult.innerHTML = `
+        <tr">
+            <td>Property</td>
+            <td>Value</td>
+        </tr>
+        <tr>
+            <td>
+                ${base}
+            </td>
+            <td>${price} ${target} </td>
+        </tr>
+        <tr>
+            <td>
+                Volume
+            </td>
+            <td>${volume}</td>
+        </tr>
+        <tr>
+            <td>
+                Change
+            </td>
+            <td>${change}</td>
+        </tr>`;
+
+    upd = setTimeout(()=>fetchPrice(ctype),10000)
 
 }
 

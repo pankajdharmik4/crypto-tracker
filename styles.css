@@ -1,0 +1,61 @@
+body{
+    margin:8px;
+    background-color: #12343b;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%231b1c2a' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");  
+padding: 44px;
+}
+
+h1{
+    color: #e1b382;
+}
+
+h4{
+    color: #c89666;
+}
+
+label{
+    color: black;
+    margin: 8px;
+    font-size: large;
+    
+}
+
+
+
+table tr {
+    background-color: #1565C0;
+    color: #fff;
+    text-align:left;
+    box-shadow: 10px 20px 80px rgba(14,21,47,0.25);
+}
+
+table td {
+    padding: 12px 15px ;
+}
+
+
+table tr:first-child {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#0D47A1;
+}
+
+.box{
+    background-color: 	#E49B0F;
+    margin: 16px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+}
+
+select {
+  cursor: pointer !important;
+  font-size: 20px !important;
+  color: #000 !important;
+  background-color: white !important;
+}
+
+button{
+    margin: 8px 0px 8px 0px;
+}
